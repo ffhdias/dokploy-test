@@ -25,6 +25,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            dokploy-test:${{ github.event.release.tag_name }}
             dokploy-test:latest
           platforms: linux/amd64     
