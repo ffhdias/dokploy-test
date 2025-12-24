@@ -1,8 +1,7 @@
 name: Build Docker images
 
-on:
-  release:
-    types: [published]
+push:
+    branches: ["main"]
 
 jobs:
   build-and-push-dockerfile-image:
@@ -25,6 +24,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            dokploy-test:${{ github.event.release.tag_name }}
+            dokploy-test:${{ github.ref_name }}
             dokploy-test:latest
           platforms: linux/amd64     
