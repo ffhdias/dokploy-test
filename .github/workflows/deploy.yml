@@ -24,6 +24,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: |
-            dokploy/example:latest
           platforms: linux/amd64     
