@@ -6,8 +6,8 @@ export default function HomePage() {
       <div className="w-full max-w-xl text-center">
         <h1 className="text-4xl font-semibold tracking-tight">Welcome Home</h1>
         <p className="mt-4 text-base text-slate-300">
-          This is a simple home page. Use the button below to visit the about
-          page.
+          This is a simple home page to test the Google Tag Manager. Use the
+          button below to visit the about page.
         </p>
         <div className="mt-8">
           <Link
